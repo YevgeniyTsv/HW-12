@@ -1,0 +1,122 @@
+/* ...burber-menu... */
+
+@media (max-width:960px) {
+
+  .header > .container {
+    position: relative;
+  }
+
+.navbar {
+  display: none;
+}
+
+.navbar-open {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    text-decoration: none;
+    z-index: 1;
+    right: 0;
+    bottom: -125%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:white;
+
+    height: 100px;
+    width: 60px;
+    background-color: #5094f2;
+    
+
+}
+
+.navbar > a {
+  color: white;
+  margin-bottom: 3px;
+}
+
+.navbar-open > a:hover {
+  background-color: #97bff6;
+}
+
+.menu-btn {
+  position: relative;
+  display: block;
+  height: 45px;
+  width: 60px;
+  border-radius: 5%;
+  background-color: #5094f2;
+
+  
+}
+.menu-link,
+.menu-link::before, 
+.menu-link::after {
+  position: absolute;
+  background-color: #ffffff;
+  top: 50%; margin-top: -2.5px;
+  left: 50%; margin-left: -20px;
+  width: 40px;
+  height: 5px;
+  border-radius: 10%;
+}
+
+.menu-link::before, 
+.menu-link::after {
+  content: "";
+  display:block;
+  transition: 0.2s;
+}
+
+.menu-link::before {
+  transform: translateY(-10px);
+}
+
+.menu-link::after {
+  transform: translateY(10px);
+}
+.menu-btn-active span {
+  height: 0;
+
+}
+.menu-btn-active span:before {
+  transform: rotate(45deg);
+  
+}
+.menu-btn-active span:after {
+  transform: rotate(-45deg);
+}
+
+}
+
+@media (min-width:961px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    color: #6c6c6c;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    padding: 7px 10px;
+    border: 2px solid transparent;
+  }
+
+  .nav-item:hover {
+    border-bottom: 2px solid #5094f2;
+  }
+  .nav-item:active {
+    border-bottom: 2px solid #e7f250;
+  }
+}

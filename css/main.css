@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+
+@media (max-width:960px) {
+
+  .container,
+  .section-foreground {
+    min-width: 300px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width:961px) {
+
+  .container,
+  .section-foreground {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+div {
+  margin: 0 0 15px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width:640px) {
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  ol,
+  div {
+    margin: 0 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

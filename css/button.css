@@ -1,0 +1,57 @@
+
+.button {
+  padding: 2px 20px;
+  border: 0px solid #ffffff;
+  background-color: #5094f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 31px;
+  font-weight: 300;
+  line-height: 61.77px;
+}
+
+.button:hover {
+  background-color: #111fdf27;
+}
+
+.button:active {
+  background-color: #292f36;
+}
+
+.button > img {
+  margin-right: 15px;
+}
+
+@media (min-width:961px) {
+  .button {
+    padding: 2px 20px;
+    
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 44.42px;
+  }
+  .button > img {
+    height: 20px;
+    width: auto;
+  }
+}
+
+@media (max-width:640px) {
+  .button {
+    padding: 2px 2px;
+    
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30.42px;
+  }
+  .button > img {
+    height: 10px;
+    width: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+

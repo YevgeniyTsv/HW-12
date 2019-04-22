@@ -1,0 +1,97 @@
+/* ...hero... */
+
+
+.section-hero {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-background>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+
+}
+
+.section-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+
+
+
+.section-foreground {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-hero:after {
+  content: "";
+  display: block;
+  background-image: url('../img/decore.png');
+  background-repeat: repeat-x;
+  height: 10px;
+}
+
+@media (max-width:960px) {
+  .section-foreground {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+.hero-desc {
+  margin-left: 65px;
+}
+
+.hero-face>img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:640px) {
+  .hero-desc {
+    margin-left: 15px;
+  }
+}
+
+
+
+
+@media (max-width:960px) {
+  .hero-face {
+    height: 225px;
+    width: auto;
+
+  }
+}
+
+@media (min-width:961px) {
+  .hero-face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 435px;
+    width: auto;
+
+  }
+}

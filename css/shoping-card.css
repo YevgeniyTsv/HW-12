@@ -1,0 +1,44 @@
+/* ...Shopping-cart... */
+
+@media (max-width:640px) {
+  .card-photo>img {
+    height: auto;
+    max-width: 100px;
+  }
+}
+
+
+
+
+@media (max-width:960px) {
+
+  .wrapper-Shopping-cart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .right-column {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+}
+
+@media (min-width:961px) {
+
+  .wrapper-Shopping-cart {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .right-column {
+    padding-left: 85px;
+    padding-right: 185px;
+  }
+
+  h2 {
+    text-align: left;
+  }
+}
